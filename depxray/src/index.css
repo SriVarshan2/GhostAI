@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #e8e8e8;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', Menlo, Courier, monospace;
+  }
+
+  .treemap-cell {
+    transition: opacity 0.4s ease, stroke-width 0.15s ease;
+    cursor: pointer;
+  }
+
+  .treemap-cell:hover {
+    stroke: #ffffff;
+    stroke-width: 2;
+    opacity: 0.9 !important;
+  }
+}
+
+/* diff2html dark theme overrides */
+.d2h-file-header { background-color: #222 !important; border-bottom: 1px solid #333 !important; color: #ccc !important; }
+.d2h-file-wrapper { border: 1px solid #2a2a2a !important; border-radius: 8px !important; overflow: hidden !important; }
+.d2h-code-line { color: #ddd !important; font-family: 'JetBrains Mono', monospace !important; font-size: 13px !important; }
+.d2h-info { background-color: #1a1a1a !important; color: #777 !important; }
+.d2h-code-line-prefix, .d2h-code-linenumber { background-color: #1a1a1a !important; border-color: #2a2a2a !important; color: #555 !important; }
+.d2h-del { background-color: rgba(226, 75, 74, 0.12) !important; border-left: 2px solid #E24B4A !important; }
+.d2h-ins { background-color: rgba(99, 153, 34, 0.12) !important; border-left: 2px solid #639922 !important; }
+.d2h-del .d2h-code-line-prefix { background-color: rgba(226, 75, 74, 0.2) !important; color: #E24B4A !important; }
+.d2h-ins .d2h-code-line-prefix { background-color: rgba(99, 153, 34, 0.2) !important; color: #639922 !important; }

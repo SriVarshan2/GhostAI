@@ -1,0 +1,38 @@
+/* diff2html dark theme overrides */
+.d2h-file-header {
+  background-color: #222 !important;
+  border-bottom: 1px solid #333 !important;
+  color: #fff !important;
+}
+.d2h-file-wrapper {
+  border: 1px solid #333 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+.d2h-code-line {
+  color: #ddd !important;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+}
+.d2h-info {
+  background-color: #1a1a1a !important;
+  color: #888 !important;
+}
+.d2h-code-line-prefix, .d2h-code-linenumber {
+  background-color: #1a1a1a !important;
+  border-color: #333 !important;
+  color: #888 !important;
+}
+.d2h-del {
+  background-color: rgba(226, 75, 74, 0.15) !important;
+  border-color: rgba(226, 75, 74, 0.3) !important;
+}
+.d2h-ins {
+  background-color: rgba(99, 153, 34, 0.15) !important;
+  border-color: rgba(99, 153, 34, 0.3) !important;
+}
+.d2h-del .d2h-code-line-prefix {
+  background-color: rgba(226, 75, 74, 0.2) !important;
+}
+.d2h-ins .d2h-code-line-prefix {
+  background-color: rgba(99, 153, 34, 0.2) !important;
+}

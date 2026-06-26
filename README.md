@@ -86,8 +86,8 @@ Waste Score   = 100% - Utility Ratio
 |---|---|---|
 | A | 0–10% | Clean. Library is well-utilized. |
 | B | 11–30% | Minor waste. Acceptable. |
-| C | 31–50% | Moderate ghost. Review imports. |
-| D | 51–70% | Heavy ghost. Swap recommended. |
+| C | 31–40% | Moderate ghost. Review imports. |
+| D | 41–70% | Heavy ghost. Swap recommended. |
 | F | 71–100% | Full ghost. This library is a liability. |
 
 The Hall of Shame tracks the worst offenders across famous public repos, updated on every scan.
